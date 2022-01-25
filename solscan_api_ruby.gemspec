@@ -37,4 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simplecov', '~> 0.21'
   spec.add_development_dependency 'vcr', '~> 6.0'
   spec.add_development_dependency 'webmock', '~> 3.14'
+
+  spec.add_runtime_dependency 'faraday', '~> 2.1'
+  spec.add_runtime_dependency 'oj', '~> 3.13'
 end
