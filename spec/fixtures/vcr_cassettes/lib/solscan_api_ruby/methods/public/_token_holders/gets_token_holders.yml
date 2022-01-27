@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/token/holders?tokenAddress=DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Jan 2022 13:19:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"672-ZM/Zw+R/vKTPKiKJ9vK2zyRmvIg"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=iJijgR8j8ewMg66%2FnFwmh8D0WOK%2Fcau2O%2FaDZ%2BWYhb3B%2B5EyYsJ26ZYGzwKGHlPVyePPjv5rplihWGl%2BIFUIX%2BIMQsbwtDL0eLon7xPf0ZQ0z9XeXgoWn9RoUhck%2B2Q7btPRy7mzEw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d4a83b2ecfd91ed-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"address":"8DSnVR8NrTcYpkHehF69jqKpQHb9W7ifEaHPtfFvTniW","amount":279803400000010880,"decimals":9,"owner":"BfFdmEZWqFW2F4atJZSSzMzvn4zPxxdWifNrwkD7G5wC","rank":1},{"address":"5AKcga2wVjxcVRVex3Ai2zLLHcLeTY74pVBHBvJGkQWD","amount":100000000000001820,"decimals":9,"owner":"BrzXn1ryJhGjdTD9Mc7X9rtWeJgLQEBRNivqBNmQ1t8R","rank":2},{"address":"8V4UCtjRmsF2SjzpKykYYBx3qe4GmmLthcLkxGiKdJGX","amount":35874437572699732,"decimals":9,"owner":"9PTS8eMzQyMH1rogp9KFuNhqtbDghTppELNaza8v2gmL","rank":3},{"address":"G7TrrrncoXBNi9bKgZWnk5zPBTFMgvRk3VbghG2d2DNE","amount":12189537937612644,"decimals":9,"owner":"u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w","rank":4},{"address":"CtNvBNJgZAEKezUoWV8QvsFXo12sV9YK59SE4BGJVFB5","amount":10421272789155996,"decimals":9,"owner":"5mEH7a7abQwUEXqfusVepc3z9cHVQg8uhqTXdq47J91o","rank":5},{"address":"HXyQ5q1XocZmbKBDtfyDDRKpWiPVNo5UM6uANZdJRZUK","amount":5000000000000000,"decimals":9,"owner":"d3UFoJoT4Tc82CS25zffSWDkQkgc9vG6UNJca2rKeMc","rank":6},{"address":"4GN51ZfmF4wzXaGtReQcBB3KRtoBoFomgo9gUBnYkeh6","amount":3850787778652539,"decimals":9,"owner":"Am7qf3hVaxb97z6GkgVCr4nqj7TtTpypQWtASrTid49V","rank":7},{"address":"G2X2czmiEmkC6pYneNG7XYvBzH5fsckFm1fiHZzgWCKg","amount":3553289047885941,"decimals":9,"owner":"CXN62dWE5nrSvPqCrKYwmmxoVp2uyDDYxQ26ULj125ts","rank":8},{"address":"CpL9DfMiZBUGyWD7LEuM1KHuMr2qkLDNVtPYoQVuyEX2","amount":2623696219565569,"decimals":9,"owner":"HiRpdAZifEsZGdzQ5Xo5wcnaH3D2Jj9SoNsUzcYNK78J","rank":9},{"address":"45gndn6V9esLC3pkAgv5UPwtcjoWZvaCYa2RrXFgx7wt","amount":2500000000000000,"decimals":9,"owner":"AbuB4Cub4LZnFtiM3TPiwrJyXxbW4PeFSQEMDXeaPy53","rank":10}],"total":13843}'
+  recorded_at: Fri, 28 Jan 2022 14:19:49 GMT
+recorded_with: VCR 6.0.0

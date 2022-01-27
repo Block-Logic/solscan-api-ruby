@@ -19,6 +19,9 @@ module SolscanApiRuby
       # @return [Hash] parsed response body.
       def body
         @body ||= Oj.load(@response.body)
+
+      rescue Oj::ParseError
+        @response.body
       end
 
       # @return [Hash] response headers.

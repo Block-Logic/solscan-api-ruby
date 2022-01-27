@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/block/last?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Jan 2022 14:28:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"694-tu6afJ58foBdv88sZgqXk3c0TX8"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wM8sPukrOnS6vHjdggz1GbVdrVghCLTPo9YLHK3n7OmOLHDGizr6XkPggJO9hqYSK4VzMTxRT9%2BvRj%2BAvmuJBLfxKmEZX4dFKg%2F293NnnorTjreuE8%2B13jUCwVM%2BGDe6LnFXPoqZEw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d42aa648d7a90f2-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"currentSlot":118086078,"result":{"blockHeight":106581301,"blockTime":1643293653,"blockhash":"8sGKwzC3PMdA2TK29ypDZ54d4WxcBcqTi6wCfJzGTch7","parentSlot":118086077,"previousBlockhash":"CsxzQtnNC3RQ3JsFJJr4fKy1NUX6KYzxTBXTufKtbAEn","feeRewards":4115000,"validator":"7LFftvhgcoe3btKAsAB4pdMV4jgv18JWRrfQWB2zXMbh","transactionCount":1628}},{"currentSlot":118086077,"result":{"blockHeight":106581300,"blockTime":1643293652,"blockhash":"CsxzQtnNC3RQ3JsFJJr4fKy1NUX6KYzxTBXTufKtbAEn","parentSlot":118086076,"previousBlockhash":"4XaWQ6he8KLMV6t776DMnKvBo17JrRr3mcqLWqxgEFZM","feeRewards":8797500,"validator":"7LFftvhgcoe3btKAsAB4pdMV4jgv18JWRrfQWB2zXMbh","transactionCount":3498}},{"currentSlot":118086076,"result":{"blockHeight":106581299,"blockTime":1643293652,"blockhash":"4XaWQ6he8KLMV6t776DMnKvBo17JrRr3mcqLWqxgEFZM","parentSlot":118086075,"previousBlockhash":"J9z4fVdSCSE3pJ7UcRFVmYPWaGzf37NZmPVLTwiBfgRT","feeRewards":7175000,"validator":"7LFftvhgcoe3btKAsAB4pdMV4jgv18JWRrfQWB2zXMbh","transactionCount":2863}},{"currentSlot":118086075,"result":{"blockHeight":106581298,"blockTime":1643293651,"blockhash":"J9z4fVdSCSE3pJ7UcRFVmYPWaGzf37NZmPVLTwiBfgRT","parentSlot":118086074,"previousBlockhash":"VawatxRAcjMrYmSmcnHrmv8goR62Ph3qaHtaWdMtFTa","feeRewards":4320000,"validator":"E8swCwkKkQ6HTMTA6e1ehoZxDKGkXqAM2o1TYgxNCX5d","transactionCount":1720}},{"currentSlot":118086074,"result":{"blockHeight":106581297,"blockTime":1643293651,"blockhash":"VawatxRAcjMrYmSmcnHrmv8goR62Ph3qaHtaWdMtFTa","parentSlot":118086073,"previousBlockhash":"CW57DSfytgQu7XuwD3cf1VfhwZVL2xbosohhjQxs1rqo","feeRewards":4295000,"validator":"E8swCwkKkQ6HTMTA6e1ehoZxDKGkXqAM2o1TYgxNCX5d","transactionCount":1707}}]'
+  recorded_at: Thu, 27 Jan 2022 15:28:06 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/token/meta?tokenAddress=DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Jan 2022 13:25:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"143-I2MW0loCGti0HAjdma1W8W1M0LU"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=divkZzIKG2JxuoDfrDaU8Hj0GZrDAFAE%2FtPKCV34IVVqBZrwozT5IM3DaG7%2FMMoWXTbkI66eBw0EO3ivZhujOZ2ZFendlwii1heMEk6gdIWjoNv1%2Bn0QrPdW2hJYTAWA0DMDTfRJKw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d4a8bc07954697f-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"CRP","name":"CropperFinance","icon":"https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz/logo.png","website":"https://cropper.finance/","twitter":"https://twitter.com/cropperfinance","decimals":9,"coingeckoId":"cropperfinance","holder":12608}'
+  recorded_at: Fri, 28 Jan 2022 14:25:18 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/transaction/5vPZJUQFHdwUdHkmBCGaCU65MXzFmDMv218QGNs44RYL3b4wBijtE3fqQZAKuwYz7mCyeLWAcQ5mz99sGTR2a6Ec
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Jan 2022 16:46:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"6e0-WWi/OPlxihtSO6pyEIELYH6boc8"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FhnOvqD%2FOQ7sDXpo6dpXzhKgnG1WAm7XjSg1DwqeGptG626plnaxuYOE4JNuYQJlKAUSbCwKvmBHMQu%2BkaW9UJ0PpwehzadrUP3t%2BheRmgI%2Bnjxpze62OjkpTj8J85CEhVRt4aZXBw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d4374c73cbc92a1-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"blockTime":1643293653,"slot":118086078,"txHash":"5vPZJUQFHdwUdHkmBCGaCU65MXzFmDMv218QGNs44RYL3b4wBijtE3fqQZAKuwYz7mCyeLWAcQ5mz99sGTR2a6Ec","fee":5000,"status":"Fail","lamport":0,"signer":["HfeFy4G9r77iyeXdbfNJjYw4z3NPEKDL6YQh3JzJ9s9f"],"logMessage":["Program
+        FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH invoke [1]","Program FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH
+        consumed 662 of 200000 compute units","Program FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH
+        failed: invalid program argument"],"inputAccount":[{"account":"HfeFy4G9r77iyeXdbfNJjYw4z3NPEKDL6YQh3JzJ9s9f","signer":true,"writable":true,"preBalance":36911320000,"postBalance":36911315000},{"account":"8RMnV1eD55iqUFJLMguPkYBkq8DCtx81XcmAja93LvRR","signer":false,"writable":true,"preBalance":24042400,"postBalance":24042400},{"account":"SysvarC1ock11111111111111111111111111111111","signer":false,"writable":false,"preBalance":1169280,"postBalance":1169280},{"account":"FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH","signer":false,"writable":false,"preBalance":1141440,"postBalance":1141440}],"recentBlockhash":"CePYYTKNiXVtzL7MdMjbQdEwLqug117juy8fWsdpZVdV","innerInstructions":[],"tokenBalanes":[],"parsedInstruction":[{"programId":"FsJ3A3u2vn5cTVofAjvy6y5kwABJAqYWpe4975bi2epH","type":"Unknown","data":"02000000070000000100000000000000c7ca208b020000002326680000000000b5d9090700000000","dataEncode":"6mJFQAEssWECZ33ewGbTZNfaAJVtEk3z7wB81iGaiQR12DCQ3mQLis","name":"Instruction
+        0","params":{"Account0":"HfeFy4G9r77iyeXdbfNJjYw4z3NPEKDL6YQh3JzJ9s9f","Account1":"8RMnV1eD55iqUFJLMguPkYBkq8DCtx81XcmAja93LvRR","Account2":"SysvarC1ock11111111111111111111111111111111"}}],"confirmations":null,"tokenTransfers":[],"solTransfers":[],"serumTransactions":[],"raydiumTransactions":[],"unknownTransfers":[]}'
+  recorded_at: Thu, 27 Jan 2022 17:46:16 GMT
+recorded_with: VCR 6.0.0

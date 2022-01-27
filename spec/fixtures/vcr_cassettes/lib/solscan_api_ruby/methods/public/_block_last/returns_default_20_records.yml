@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/block/last
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Jan 2022 14:28:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1877-L8Nuo+ytSuSCJVF4jn6ldLmYsW8"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BYQ2%2B2At66wQaUY1A%2BxbMWQmn0BI4X5PDfYdFhc%2FcWQcL95ifGeGJ11PvlLxyWd2PPAH4lIJmQXpknvJkhMVhNfL9t8145xfisIvQ9HpSSqgeWFRgoxT4fEUdR28Sbwz2He8ggStSg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d42aa627f679177-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"currentSlot":118086078,"result":{"blockHeight":106581301,"blockTime":1643293653,"blockhash":"8sGKwzC3PMdA2TK29ypDZ54d4WxcBcqTi6wCfJzGTch7","parentSlot":118086077,"previousBlockhash":"CsxzQtnNC3RQ3JsFJJr4fKy1NUX6KYzxTBXTufKtbAEn","feeRewards":4115000,"validator":"7LFftvhgcoe3btKAsAB4pdMV4jgv18JWRrfQWB2zXMbh","transactionCount":1628}},{"currentSlot":118086077,"result":{"blockHeight":106581300,"blockTime":1643293652,"blockhash":"CsxzQtnNC3RQ3JsFJJr4fKy1NUX6KYzxTBXTufKtbAEn","parentSlot":118086076,"previousBlockhash":"4XaWQ6he8KLMV6t776DMnKvBo17JrRr3mcqLWqxgEFZM","feeRewards":8797500,"validator":"7LFftvhgcoe3btKAsAB4pdMV4jgv18JWRrfQWB2zXMbh","transactionCount":3498}},{"currentSlot":118086076,"result":{"blockHeight":106581299,"blockTime":1643293652,"blockhash":"4XaWQ6he8KLMV6t776DMnKvBo17JrRr3mcqLWqxgEFZM","parentSlot":118086075,"previousBlockhash":"J9z4fVdSCSE3pJ7UcRFVmYPWaGzf37NZmPVLTwiBfgRT","feeRewards":7175000,"validator":"7LFftvhgcoe3btKAsAB4pdMV4jgv18JWRrfQWB2zXMbh","transactionCount":2863}},{"currentSlot":118086075,"result":{"blockHeight":106581298,"blockTime":1643293651,"blockhash":"J9z4fVdSCSE3pJ7UcRFVmYPWaGzf37NZmPVLTwiBfgRT","parentSlot":118086074,"previousBlockhash":"VawatxRAcjMrYmSmcnHrmv8goR62Ph3qaHtaWdMtFTa","feeRewards":4320000,"validator":"E8swCwkKkQ6HTMTA6e1ehoZxDKGkXqAM2o1TYgxNCX5d","transactionCount":1720}},{"currentSlot":118086074,"result":{"blockHeight":106581297,"blockTime":1643293651,"blockhash":"VawatxRAcjMrYmSmcnHrmv8goR62Ph3qaHtaWdMtFTa","parentSlot":118086073,"previousBlockhash":"CW57DSfytgQu7XuwD3cf1VfhwZVL2xbosohhjQxs1rqo","feeRewards":4295000,"validator":"E8swCwkKkQ6HTMTA6e1ehoZxDKGkXqAM2o1TYgxNCX5d","transactionCount":1707}},{"currentSlot":118086073,"result":{"blockHeight":106581296,"blockTime":1643293650,"blockhash":"CW57DSfytgQu7XuwD3cf1VfhwZVL2xbosohhjQxs1rqo","parentSlot":118086072,"previousBlockhash":"kpDdwSa9PLC7KmSCj7cwafGkAzVD7E9Fc234RgFbSFt","feeRewards":4905000,"validator":"E8swCwkKkQ6HTMTA6e1ehoZxDKGkXqAM2o1TYgxNCX5d","transactionCount":1958}},{"currentSlot":118086072,"result":{"blockHeight":106581295,"blockTime":1643293650,"blockhash":"kpDdwSa9PLC7KmSCj7cwafGkAzVD7E9Fc234RgFbSFt","parentSlot":118086071,"previousBlockhash":"5tee4AiEb4hdtDeoZhfCAgfKycLKGLLay4fjZNrxWmCd","feeRewards":3842500,"validator":"E8swCwkKkQ6HTMTA6e1ehoZxDKGkXqAM2o1TYgxNCX5d","transactionCount":1531}},{"currentSlot":118086071,"result":{"blockHeight":106581294,"blockTime":1643293649,"blockhash":"5tee4AiEb4hdtDeoZhfCAgfKycLKGLLay4fjZNrxWmCd","parentSlot":118086070,"previousBlockhash":"9viziiVuEtsh9MRNh7eCwn3dyzCF3yxHCmT3znZEwYMd","feeRewards":5000000,"validator":"Bx7SNaHfyeLZDeja9HPsn61XYjeForHtrTxLCb6cu62o","transactionCount":1991}},{"currentSlot":118086070,"result":{"blockHeight":106581293,"blockTime":1643293649,"blockhash":"9viziiVuEtsh9MRNh7eCwn3dyzCF3yxHCmT3znZEwYMd","parentSlot":118086069,"previousBlockhash":"8oYaSJT8bfwsZmWpeVfZ449LKRSUtJDgRM9tiRBPbZim","feeRewards":4447500,"validator":"Bx7SNaHfyeLZDeja9HPsn61XYjeForHtrTxLCb6cu62o","transactionCount":1772}},{"currentSlot":118086069,"result":{"blockHeight":106581292,"blockTime":1643293648,"blockhash":"8oYaSJT8bfwsZmWpeVfZ449LKRSUtJDgRM9tiRBPbZim","parentSlot":118086068,"previousBlockhash":"HXAAc4hujA5NadE7RTd9PwrkJN3owxKnynPj4SiywDeC","feeRewards":4142500,"validator":"Bx7SNaHfyeLZDeja9HPsn61XYjeForHtrTxLCb6cu62o","transactionCount":1649}},{"currentSlot":118086068,"result":{"blockHeight":106581291,"blockTime":1643293648,"blockhash":"HXAAc4hujA5NadE7RTd9PwrkJN3owxKnynPj4SiywDeC","parentSlot":118086067,"previousBlockhash":"D6CR3MnHBaKMj4rQtKiLE7dGvJpnjpuegMt75VZ3C7rN","feeRewards":2972500,"validator":"Bx7SNaHfyeLZDeja9HPsn61XYjeForHtrTxLCb6cu62o","transactionCount":1187}},{"currentSlot":118086067,"result":{"blockHeight":106581290,"blockTime":1643293648,"blockhash":"D6CR3MnHBaKMj4rQtKiLE7dGvJpnjpuegMt75VZ3C7rN","parentSlot":118086066,"previousBlockhash":"DpJ4AyS9EcMhVjzztu5TZMMhv6NP16i8HC5TTpw55jCK","feeRewards":2055000,"validator":"Certusm1sa411sMpV9FPqU5dXAYhmmhygvxJ23S6hJ24","transactionCount":815}},{"currentSlot":118086066,"result":{"blockHeight":106581289,"blockTime":1643293647,"blockhash":"DpJ4AyS9EcMhVjzztu5TZMMhv6NP16i8HC5TTpw55jCK","parentSlot":118086065,"previousBlockhash":"9pdxD8csmbvAAhh3nSy1BGwwt9TX7CRictZuCrKJVpFB","feeRewards":4155000,"validator":"Certusm1sa411sMpV9FPqU5dXAYhmmhygvxJ23S6hJ24","transactionCount":1647}},{"currentSlot":118086065,"result":{"blockHeight":106581288,"blockTime":1643293646,"blockhash":"9pdxD8csmbvAAhh3nSy1BGwwt9TX7CRictZuCrKJVpFB","parentSlot":118086064,"previousBlockhash":"14DjrLneZqKZ4ariDdPLakrpp4ebSFKzcT4ZRgAmAFBj","feeRewards":5015000,"validator":"Certusm1sa411sMpV9FPqU5dXAYhmmhygvxJ23S6hJ24","transactionCount":1984}},{"currentSlot":118086064,"result":{"blockHeight":106581287,"blockTime":1643293645,"blockhash":"14DjrLneZqKZ4ariDdPLakrpp4ebSFKzcT4ZRgAmAFBj","parentSlot":118086063,"previousBlockhash":"AkCBmdmvnqTBBkfLXJNvHoEuGwWEApZM3Ufa7KGa4Mhf","feeRewards":6395000,"validator":"Certusm1sa411sMpV9FPqU5dXAYhmmhygvxJ23S6hJ24","transactionCount":2555}},{"currentSlot":118086063,"result":{"blockHeight":106581286,"blockTime":1643293644,"blockhash":"AkCBmdmvnqTBBkfLXJNvHoEuGwWEApZM3Ufa7KGa4Mhf","parentSlot":118086062,"previousBlockhash":"C5KJpuyMDB1K7YFpcJQ3XeToGki3Fsj5KHtxn6HAZP6","feeRewards":2867500,"validator":"91yWMWM2wtsftTtgE1HA1bseRhLAg7yCuHg5GKFHn9r3","transactionCount":1113}},{"currentSlot":118086062,"result":{"blockHeight":106581285,"blockTime":1643293644,"blockhash":"C5KJpuyMDB1K7YFpcJQ3XeToGki3Fsj5KHtxn6HAZP6","parentSlot":118086061,"previousBlockhash":"Cs1Gc49i6jkD3Qs74gwxBtVBvpsf23MYmmV4mZaVrqsL","feeRewards":1950000,"validator":"91yWMWM2wtsftTtgE1HA1bseRhLAg7yCuHg5GKFHn9r3","transactionCount":760}},{"currentSlot":118086061,"result":{"blockHeight":106581284,"blockTime":1643293644,"blockhash":"Cs1Gc49i6jkD3Qs74gwxBtVBvpsf23MYmmV4mZaVrqsL","parentSlot":118086060,"previousBlockhash":"6fHM1K7YDj66UJ7sh5XmAYqeuBkwkMmn3SfiXZmsgfNL","feeRewards":5717500,"validator":"91yWMWM2wtsftTtgE1HA1bseRhLAg7yCuHg5GKFHn9r3","transactionCount":2266}},{"currentSlot":118086060,"result":{"code":-32004,"message":"Block
+        not available for slot 118086060"}},{"currentSlot":118086059,"result":{"code":-32004,"message":"Block
+        not available for slot 118086059"}}]'
+  recorded_at: Thu, 27 Jan 2022 15:28:06 GMT
+recorded_with: VCR 6.0.0

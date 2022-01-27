@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/market/token/DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Jan 2022 13:45:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '41'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"29-hB6g13WTrULkTllR0zR7N0FZr9w"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1hsqK5H%2B0hk1L0WiYboR6G8FYy4zLsxOdw1MjwhJ%2BMRAFb7EGBely%2FJ2lI8ZUIk490iO67PAiyJeQh%2FuioE8UA4E5%2BfyvnESLuv%2F8b8dr1FqwSfyICMSR9qtXIQIn5FcRdd27o0cYg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d4aa9359d97915c-FRA
+    body:
+      encoding: UTF-8
+      string: '{"priceUsdt":0.07573,"volumeUsdt":393160}'
+  recorded_at: Fri, 28 Jan 2022 14:45:25 GMT
+recorded_with: VCR 6.0.0
