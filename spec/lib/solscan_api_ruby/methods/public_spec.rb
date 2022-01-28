@@ -320,8 +320,12 @@ describe SolscanApiRuby::Methods::Public do
 
               expected_headers = @expected_responses['export_transactions_headers']
 
-              csv_params = { col_sep: ",", row_sep: :auto }
-              csv_headers_from_response_body = CSV.parse(response.body, csv_params).flatten.map(&:strip)
+              csv_headers_from_response_body = CSV.parse(
+                response.body,
+                col_sep: ",",
+                row_sep: :auto
+              ).flatten
+               .map(&:strip)
 
               expect(response.status).to eq(SolscanApiRuby::Client::HttpCodes::HTTP_OK_CODE)
               expect(csv_headers_from_response_body).to eq(expected_headers)
