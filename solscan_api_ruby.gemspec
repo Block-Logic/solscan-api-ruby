@@ -23,6 +23,10 @@ Gem::Specification.new do |spec|
     'Rakefile'
   ]
   spec.extra_rdoc_files = ['README.md']
+  spec.metadata= {
+    'documentation_uri' => 'https://www.rubydoc.info/github/Block-Logic/solana-rpc-ruby',
+    'source_code_uri' => 'https://github.com/Block-Logic/solana-rpc-ruby'
+  }
 
   spec.add_development_dependency 'pry', '~> 0.14'
   spec.add_development_dependency 'rubocop', '~> 1.25'
