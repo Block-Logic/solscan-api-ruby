@@ -22,8 +22,11 @@ module SolscanApiRuby
       def initialize(api_response)
         body = Oj.load(api_response.body)
 
-        @status = body['status']
         @error = body['error']
+        @status = body['status']
+      rescue Oj::ParseError
+        @error = api_response.body
+        @status = api_response.status
       end
     end
   end

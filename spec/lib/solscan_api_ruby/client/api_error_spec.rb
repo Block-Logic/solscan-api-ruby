@@ -19,24 +19,35 @@ describe SolscanApiRuby::Client::ApiError do
   let(:client) { TestClient.new(conn) }
   let(:faraday_response) { client.httpbingo('ip') }
 
+  before do
+    stubs.get('/ip') { [400, content_type, body ] }
+  end
+
   context "response 400" do
-    before do
-      stubs.get('/ip') do
-        [
-          400,
-          { 'Content-Type': 'application/javascript' },
-          '{"status":400,"error":{"message":"limit parameter must be a number less than 20"}}'
-        ]
+    let(:content_type) { { 'Content-Type': 'application/javascript' } }
+    let(:status) { { "status" => 400 } }
+    let(:error_message) { { "message" => "limit parameter must be a number less than 20" } }
+
+    context "json body" do
+      let(:body) { status.merge({"error" => error_message}).to_json }
+
+      it 'returns error and status from body (as solscan provides)' do
+        response = described_class.new(faraday_response)
+
+        expect(response.error).to eq(error_message)
+        expect(response.status).to eq(400)
       end
     end
 
-    it 'returns original body without parsing when body is not a valid JSON' do
-      response = described_class.new(faraday_response)
+    context "not a json body" do
+      let(:body) { "Not found." }
 
-      expect(response.body).to eq('Not found')
-      expect(response.headers).to eq("Content-type" => "application/javascript")
-      expect(response.status).to eq(400)
-      expect(response.successfull?).to be_falsey
+      it 'returns not parsed error and status from faraday response' do
+        response = described_class.new(faraday_response)
+
+        expect(response.error).to eq(body)
+        expect(response.status).to eq(400)
+      end
     end
   end
 end
