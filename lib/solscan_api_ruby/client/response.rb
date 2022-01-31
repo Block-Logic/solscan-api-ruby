@@ -36,7 +36,7 @@ module SolscanApiRuby
 
       # @return [Boolean] response success.
       def successfull?
-        status == HTTP_OK_CODE
+        @response.success?
       end
     end
   end
