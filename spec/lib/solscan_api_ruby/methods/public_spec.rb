@@ -218,6 +218,17 @@ describe SolscanApiRuby::Methods::Public do
               expect(response.body.size).to eq(5)
             end
           end
+
+          it "returns 500 error when limit is too big" do
+            VCR.use_cassette(vcr_file) do
+              expect do
+                described_class.new.account_transactions(account, limit: 250)
+              end.to raise_error(SolscanApiRuby::Client::ApiError) do |error|
+                expect(error.status).to eq 500
+                expect(error.error).to eq({"message" => "413 Payload Too Large: request body size exceeds allowed maximum"})
+              end
+            end
+          end
         end
       end
     end
