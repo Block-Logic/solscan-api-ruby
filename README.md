@@ -13,7 +13,7 @@ Ruby Client for the Solscan API. This gem provides a wrapper methods for Solscan
 
 ### Requirements
 
-This gem requires Ruby 2.6+ and h Rails 6.0+. It MIGHT work with lower versions, but was not tested with them.
+This gem requires Ruby 2.6+. It MIGHT work with lower versions, but was not tested with them.
 Add the following line to your Gemfile:
 
 ```ruby
