@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/block/last
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 26 Jan 2022 15:22:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1a4d-+YP2E5rKxWY4nFndpazm09spkuw"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PixgTot5sja%2FaxZlAhRlrlkFxF6dn1e%2B%2FLoJTV%2F3i1UuWJ2wUwVHNfRkRpHaUMtqMnpEfveV6iDe5jjE5SG%2B4bOlYCJI6xDJiwjZqWlhDBaVbkTsMF4remItxox%2BfMgMAtc76L9Q%2Fw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d3abc16f89b923b-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"currentSlot":117941343,"result":{"blockHeight":106443909,"blockTime":1643210504,"blockhash":"8c6bFbLLysBc6n42Uv5Kyt7bVJwVAjWsJi5ceJAAH1gq","parentSlot":117941342,"previousBlockhash":"7sTtkhfoQaYDEwnqcZkh7P8GMp6e5522cNSRqBpGeFEh","feeRewards":2540000,"validator":"38mTPbpSCC3iPrdM5KKy2kXAjdSdw6GyNndMKvgHDoNv","transactionCount":1006}},{"currentSlot":117941342,"result":{"blockHeight":106443908,"blockTime":1643210502,"blockhash":"7sTtkhfoQaYDEwnqcZkh7P8GMp6e5522cNSRqBpGeFEh","parentSlot":117941341,"previousBlockhash":"HPHXkNSWMpYFPByELsHSjbvuZkFSuT1hDMRQHmYXxgVQ","feeRewards":4715000,"validator":"38mTPbpSCC3iPrdM5KKy2kXAjdSdw6GyNndMKvgHDoNv","transactionCount":1869}},{"currentSlot":117941341,"result":{"blockHeight":106443907,"blockTime":1643210502,"blockhash":"HPHXkNSWMpYFPByELsHSjbvuZkFSuT1hDMRQHmYXxgVQ","parentSlot":117941340,"previousBlockhash":"BRMV99T4sSe5R6iK6mcwotXxb68HRHNNNsBhVZgSqHi","feeRewards":8632500,"validator":"38mTPbpSCC3iPrdM5KKy2kXAjdSdw6GyNndMKvgHDoNv","transactionCount":3427}},{"currentSlot":117941340,"result":{"blockHeight":106443906,"blockTime":1643210501,"blockhash":"BRMV99T4sSe5R6iK6mcwotXxb68HRHNNNsBhVZgSqHi","parentSlot":117941339,"previousBlockhash":"7TZeFQTQDebFgRTrtJpV7eJfbmSMdaL5npiRBfA5tzEk","feeRewards":5107500,"validator":"38mTPbpSCC3iPrdM5KKy2kXAjdSdw6GyNndMKvgHDoNv","transactionCount":2040}},{"currentSlot":117941339,"result":{"blockHeight":106443905,"blockTime":1643210501,"blockhash":"7TZeFQTQDebFgRTrtJpV7eJfbmSMdaL5npiRBfA5tzEk","parentSlot":117941338,"previousBlockhash":"BiqDtT4inzEPYtMssoY1EWhdLhb8AQ6XVQzmqq3ss57H","feeRewards":3237500,"validator":"2UUvCc7Jittv489uA6gYvaA3EFu7DiBkodMneANXpxF7","transactionCount":1276}},{"currentSlot":117941338,"result":{"blockHeight":106443904,"blockTime":1643210500,"blockhash":"BiqDtT4inzEPYtMssoY1EWhdLhb8AQ6XVQzmqq3ss57H","parentSlot":117941337,"previousBlockhash":"C3M2xPKbZXukxzUs8QtxsuDyNZ7guePF3RZ7A7aZxMNm","feeRewards":5560000,"validator":"2UUvCc7Jittv489uA6gYvaA3EFu7DiBkodMneANXpxF7","transactionCount":2210}},{"currentSlot":117941337,"result":{"blockHeight":106443903,"blockTime":1643210499,"blockhash":"C3M2xPKbZXukxzUs8QtxsuDyNZ7guePF3RZ7A7aZxMNm","parentSlot":117941336,"previousBlockhash":"8fDNXT6wY6S8YhVtMdgPuEMH6pMQGk2Vamwoz84eastN","feeRewards":7610000,"validator":"2UUvCc7Jittv489uA6gYvaA3EFu7DiBkodMneANXpxF7","transactionCount":3028}},{"currentSlot":117941336,"result":{"blockHeight":106443902,"blockTime":1643210499,"blockhash":"8fDNXT6wY6S8YhVtMdgPuEMH6pMQGk2Vamwoz84eastN","parentSlot":117941335,"previousBlockhash":"5s4b9ydkG2H3uQHNoHDNuWkyv1n2N7PPE9nDC463ZKLz","feeRewards":5062500,"validator":"2UUvCc7Jittv489uA6gYvaA3EFu7DiBkodMneANXpxF7","transactionCount":2019}},{"currentSlot":117941335,"result":{"blockHeight":106443901,"blockTime":1643210498,"blockhash":"5s4b9ydkG2H3uQHNoHDNuWkyv1n2N7PPE9nDC463ZKLz","parentSlot":117941334,"previousBlockhash":"5okMfzUVjf1wQLSuzRGp32xpyRKuwKrMrpKhFXtPrwM4","feeRewards":5565000,"validator":"VymDdiepH77edNcNcKBKtRUb3gbQPtPyGh5NLcWaynj","transactionCount":2217}},{"currentSlot":117941334,"result":{"blockHeight":106443900,"blockTime":1643210498,"blockhash":"5okMfzUVjf1wQLSuzRGp32xpyRKuwKrMrpKhFXtPrwM4","parentSlot":117941333,"previousBlockhash":"6LkkcPrfvqfVdZNEoXt3NrSyaF67g2E6J5nN6fNcHSCA","feeRewards":3445000,"validator":"VymDdiepH77edNcNcKBKtRUb3gbQPtPyGh5NLcWaynj","transactionCount":1368}},{"currentSlot":117941333,"result":{"blockHeight":106443899,"blockTime":1643210497,"blockhash":"6LkkcPrfvqfVdZNEoXt3NrSyaF67g2E6J5nN6fNcHSCA","parentSlot":117941332,"previousBlockhash":"D3nrDSECmKCwhL4nqQBQZKyVHPB413ReHVbPnNV2rYUM","feeRewards":4275000,"validator":"VymDdiepH77edNcNcKBKtRUb3gbQPtPyGh5NLcWaynj","transactionCount":1703}},{"currentSlot":117941332,"result":{"blockHeight":106443898,"blockTime":1643210496,"blockhash":"D3nrDSECmKCwhL4nqQBQZKyVHPB413ReHVbPnNV2rYUM","parentSlot":117941331,"previousBlockhash":"GBSBFCY81DViWiNzdJZmV2eWr8rib3Xvt1TiQdsbnNFR","feeRewards":4217500,"validator":"VymDdiepH77edNcNcKBKtRUb3gbQPtPyGh5NLcWaynj","transactionCount":1686}},{"currentSlot":117941331,"result":{"blockHeight":106443897,"blockTime":1643210496,"blockhash":"GBSBFCY81DViWiNzdJZmV2eWr8rib3Xvt1TiQdsbnNFR","parentSlot":117941330,"previousBlockhash":"43duLx47qXyJAvF46V3jzo6SEcEyRqhJ58TrA5yU6T7T","feeRewards":7685000,"validator":"DWvDTSh3qfn88UoQTEKRV2JnLt5jtJAVoiCo3ivtMwXP","transactionCount":3064}},{"currentSlot":117941330,"result":{"blockHeight":106443896,"blockTime":1643210496,"blockhash":"43duLx47qXyJAvF46V3jzo6SEcEyRqhJ58TrA5yU6T7T","parentSlot":117941329,"previousBlockhash":"DpWGrpJLAh4o1SQ9hTBH9mxe7eyQWbbg4bffyZj9cju5","feeRewards":8130000,"validator":"DWvDTSh3qfn88UoQTEKRV2JnLt5jtJAVoiCo3ivtMwXP","transactionCount":3217}},{"currentSlot":117941329,"result":{"blockHeight":106443895,"blockTime":1643210495,"blockhash":"DpWGrpJLAh4o1SQ9hTBH9mxe7eyQWbbg4bffyZj9cju5","parentSlot":117941328,"previousBlockhash":"9xhWgDvskBu3AtKGgBaPNUxf39fpVsSeFCzBUcDy7XuT","feeRewards":6215000,"validator":"DWvDTSh3qfn88UoQTEKRV2JnLt5jtJAVoiCo3ivtMwXP","transactionCount":2456}},{"currentSlot":117941328,"result":{"blockHeight":106443894,"blockTime":1643210495,"blockhash":"9xhWgDvskBu3AtKGgBaPNUxf39fpVsSeFCzBUcDy7XuT","parentSlot":117941327,"previousBlockhash":"Bbu4c79sQ3RuqAc3kRHJkajbpYWeG5fYBr3E2j71ZAJJ","feeRewards":1797500,"validator":"DWvDTSh3qfn88UoQTEKRV2JnLt5jtJAVoiCo3ivtMwXP","transactionCount":718}},{"currentSlot":117941327,"result":{"blockHeight":106443893,"blockTime":1643210494,"blockhash":"Bbu4c79sQ3RuqAc3kRHJkajbpYWeG5fYBr3E2j71ZAJJ","parentSlot":117941326,"previousBlockhash":"7kbQmT94EfedBS6qn6GfBGD3atTpe2B1VCv3LM2edhfX","feeRewards":4045000,"validator":"49rQADJBCgYXA8sBkBthx3GFLxbtxQXhX4Z752VF6ffi","transactionCount":1609}},{"currentSlot":117941326,"result":{"blockHeight":106443892,"blockTime":1643210494,"blockhash":"7kbQmT94EfedBS6qn6GfBGD3atTpe2B1VCv3LM2edhfX","parentSlot":117941325,"previousBlockhash":"9cnxU47yjqQe8V4HciaW4G1zkPNcVBbEFv4GDFfbV7XE","feeRewards":4310000,"validator":"49rQADJBCgYXA8sBkBthx3GFLxbtxQXhX4Z752VF6ffi","transactionCount":1710}},{"currentSlot":117941325,"result":{"blockHeight":106443891,"blockTime":1643210493,"blockhash":"9cnxU47yjqQe8V4HciaW4G1zkPNcVBbEFv4GDFfbV7XE","parentSlot":117941324,"previousBlockhash":"HbN1bmwbQecGkiDWawn4RZWzHQqwY9pHeiYjtcDc6e1q","feeRewards":4180000,"validator":"49rQADJBCgYXA8sBkBthx3GFLxbtxQXhX4Z752VF6ffi","transactionCount":1660}},{"currentSlot":117941324,"result":{"blockHeight":106443890,"blockTime":1643210492,"blockhash":"HbN1bmwbQecGkiDWawn4RZWzHQqwY9pHeiYjtcDc6e1q","parentSlot":117941323,"previousBlockhash":"CwEddH1KsZYfBfgXaP3cuuq4Pumtrv1zjoqbY8bLLCYs","feeRewards":1840000,"validator":"49rQADJBCgYXA8sBkBthx3GFLxbtxQXhX4Z752VF6ffi","transactionCount":730}}]'
+  recorded_at: Wed, 26 Jan 2022 16:22:06 GMT
+recorded_with: VCR 6.0.0

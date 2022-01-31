@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/account/exportTransactions?account=BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb&fromTime=1&toTime=1111111111111&type=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Jan 2022 13:54:41 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Disposition:
+      - attachment; filename="export_txs_BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb_1643378082693.csv"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=45xrGgc97deC2y%2BQOZ59VjdJGGkPyvOwomzmdkJ7EIes4aEUSpJX1faOztJ47ICZMTqFGlSWe0%2B52seLqGbVmuC5Jt5B45rTf%2F8cy0773oxFvPkKEWVX1ogojmkFCtXIiXQkw%2FOxjw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d4ab6d13c45914a-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: 'Type,                        Txhash,                        BlockTime
+        Unix,                        BlockTime,                        Fee (SOL),                        TokenAccount,                        ChangeType,                        SPL
+        BalanceChange,                        PreBalancer,                        PostBalancer,                        TokenAddress,                        TokenName(off-chain),                        Symbol(off-chain),                        SolTransfer
+        Source,                        SolTransfer Destination,                        Amount
+        (SOL)
+
+'
+  recorded_at: Fri, 28 Jan 2022 14:54:42 GMT
+recorded_with: VCR 6.0.0

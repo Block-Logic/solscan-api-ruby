@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/token/list?direction=desc&limit=5&offset=2&sortBy=volume
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Jan 2022 13:41:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1e16-gIoSod8sZl+dN+kzPazCJ3MbEi4"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EKfM6lh9mpdrXjbTsCAk7At3%2FPvNrNiAnK0uqnQqJZVyqpL3%2BzJZVih9HRKoK95LhvMd99G%2FagnkZuglMaty19ItI1Lxib8aZt4FhWrJXxLr9FbYRG528WvV38OpQmR%2FCS5ji5Rm9w%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d4aa3701bcd9274-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"mintAddress":"E77cpQ4VncGmcAXX16LHFFzNBEBb2U7Ar7LBmZNfCgwL","tokenSymbol":"abUSDT","tokenName":"Wrapped
+        USDT (Allbridge from BSC)","decimals":9,"icon":"https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/BQcdHdAQW1hczDbBi9hiegXAR7A98Q9jx3X3iBBBDiq4/logo.png","website":"","twitter":"","extensions":{"coingeckoID":"tether","coingeckoId":"tether"},"tokenHolder":true,"marketCapRank":262,"supply":{"amount":"550368786025428","decimals":9,"uiAmount":550368.786025428,"uiAmountString":"550368.786025428"},"holder":232,"priceUst":1.01,"marketCapFD":555872.4738856823,"volume":{"volumeUsd":48667180725,"volume":0},"coingeckoInfo":{"marketCapRank":3,"coingeckoRank":140,"marketData":{"currentPrice":1.01,"ath":1.32,"athChangePercentage":-24.09845,"athDate":"2018-07-24T00:00:00.000Z","atl":0.572521,"atlChangePercentage":75.40838,"atlDate":"2015-03-02T00:00:00.000Z","marketCap":78535310292,"marketCapRank":3,"fullyDilutedValuation":0,"totalVolume":48667180725,"priceHigh24h":1.02,"priceLow24h":0.992856,"priceChange24h":0.01043453,"priceChangePercentage24h":1.04487,"priceChangePercentage7d":0.89982,"priceChangePercentage14d":0.96001,"priceChangePercentage30d":0.86095,"priceChangePercentage60d":1.00036,"priceChangePercentage200d":0.81054,"priceChangePercentage1y":0.69843,"marketCapChange24h":95094208,"marketCapChangePercentage24h":0.12123,"totalSupply":78168627985.9358,"maxSupply":null,"circulatingSupply":78168627985.9358,"lastUpdated":"2022-01-28T13:36:34.537Z"}},"tag":["stablecoin"]},{"mintAddress":"GfzU1fLASNV3r4NtEyrnwTyTakJkYzoivnaL3Snh45oj","tokenSymbol":"ahUSDT","tokenName":"Wrapped
+        USDT (Allbridge from HECO)","decimals":9,"icon":"https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/GfzU1fLASNV3r4NtEyrnwTyTakJkYzoivnaL3Snh45oj/logo.png","website":"","twitter":"","extensions":{"coingeckoID":"tether","coingeckoId":"tether"},"tokenHolder":true,"marketCapRank":260,"supply":{"amount":"606373043619201","decimals":9,"uiAmount":606373.043619201,"uiAmountString":"606373.043619201"},"holder":23,"priceUst":1,"marketCapFD":606373.043619201,"volume":{"volumeUsd":48035951920,"volume":0},"coingeckoInfo":{"marketCapRank":3,"coingeckoRank":140,"marketData":{"currentPrice":1,"ath":1.32,"athChangePercentage":-24.41084,"athDate":"2018-07-24T00:00:00.000Z","atl":0.572521,"atlChangePercentage":74.68646,"atlDate":"2015-03-02T00:00:00.000Z","marketCap":78418966199,"marketCapRank":3,"fullyDilutedValuation":0,"totalVolume":48035951920,"priceHigh24h":1.02,"priceLow24h":0.992856,"priceChange24h":0.0006418,"priceChangePercentage24h":0.06395,"priceChangePercentage7d":0.41748,"priceChangePercentage14d":0.47738,"priceChangePercentage30d":0.37879,"priceChangePercentage60d":0.51754,"priceChangePercentage200d":0.32863,"priceChangePercentage1y":0.21706,"marketCapChange24h":-124854737.931,"marketCapChangePercentage24h":-0.15896,"totalSupply":78168627985.9358,"maxSupply":null,"circulatingSupply":78168627985.9358,"lastUpdated":"2022-01-28T13:16:31.290Z"}},"tag":["stablecoin"]},{"mintAddress":"EJwZgeZrdC8TXTQbQBoL6bfuAnFUUy1PVCMB4DYPzVaS","tokenSymbol":"USDT","tokenName":"USDT
+        (Saber Devnet)","decimals":6,"icon":"https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB/logo.svg","website":"https://saber.so/","twitter":"","extensions":{"coingeckoID":"tether","coingeckoId":"tether","website":"https://saber.so/"},"tokenHolder":true,"marketCapRank":6591,"priceUst":1,"volume":{"volumeUsd":48007973731,"volume":0},"coingeckoInfo":{"marketCapRank":3,"coingeckoRank":140,"marketData":{"currentPrice":1,"ath":1.32,"athChangePercentage":-24.34678,"athDate":"2018-07-24T00:00:00.000Z","atl":0.572521,"atlChangePercentage":74.83449,"atlDate":"2015-03-02T00:00:00.000Z","marketCap":78243994947,"marketCapRank":3,"fullyDilutedValuation":0,"totalVolume":48007973731,"priceHigh24h":1.02,"priceLow24h":0.992856,"priceChange24h":0.00015317,"priceChangePercentage24h":0.0153,"priceChangePercentage7d":0.14119,"priceChangePercentage14d":0.20093,"priceChangePercentage30d":0.10262,"priceChangePercentage60d":0.24098,"priceChangePercentage200d":0.05259,"priceChangePercentage1y":-0.05867,"marketCapChange24h":58580632,"marketCapChangePercentage24h":0.07493,"totalSupply":78168627985.9358,"maxSupply":null,"circulatingSupply":78168627985.9358,"lastUpdated":"2022-01-28T12:01:27.271Z"}},"tag":["stablecoin"]},{"mintAddress":"5goWRao6a3yNC4d6UjMdQxonkCMvKBwdpubU3qhfcdf1","tokenSymbol":"USDTpo","tokenName":"Tether
+        USD (Wormhole from Polygon)","decimals":6,"icon":"https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/5goWRao6a3yNC4d6UjMdQxonkCMvKBwdpubU3qhfcdf1/logo.png","website":"","twitter":"","extensions":{"coingeckoID":"tether","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","assetContract":"https://polygonscan.com/token/0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bridgeContract":"https://polygonscan.com/address/0x5a58505a96d1dbf8df91cb21b54419fc36e93fde","coingeckoId":"tether"},"tokenHolder":true,"marketCapRank":240,"supply":{"amount":"868447366982","decimals":6,"uiAmount":868447.366982,"uiAmountString":"868447.366982"},"holder":77,"priceUst":0.998002,"marketCapFD":866712.2091427699,"volume":{"volumeUsd":47808880424,"volume":0},"coingeckoInfo":{"marketCapRank":3,"coingeckoRank":140,"marketData":{"currentPrice":0.998002,"ath":1.32,"athChangePercentage":-24.47183,"athDate":"2018-07-24T00:00:00.000Z","atl":0.572521,"atlChangePercentage":74.54551,"atlDate":"2015-03-02T00:00:00.000Z","marketCap":78114668901,"marketCapRank":3,"fullyDilutedValuation":0,"totalVolume":47808880424,"priceHigh24h":1.02,"priceLow24h":0.992856,"priceChange24h":-0.003906649763,"priceChangePercentage24h":-0.38992,"priceChangePercentage7d":-0.20723,"priceChangePercentage14d":-0.14769,"priceChangePercentage30d":-0.24567,"priceChangePercentage60d":-0.10779,"priceChangePercentage200d":-0.29552,"priceChangePercentage1y":-0.4064,"marketCapChange24h":-536395210.99,"marketCapChangePercentage24h":-0.68199,"totalSupply":78168627985.9358,"maxSupply":null,"circulatingSupply":78168627985.9358,"lastUpdated":"2022-01-28T09:41:33.924Z"}},"tag":["wrapped"]},{"mintAddress":"DHpoYejUDqzByb6HAdaLWF7KZvwUv2vWYDY9cTENNZui","tokenSymbol":"acUSDC","tokenName":"Wrapped
+        USDC (Allbridge from Celo)","decimals":9,"icon":"https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png","website":"","twitter":"","extensions":{"coingeckoID":"usd-coin","coingeckoId":"usd-coin"},"tokenHolder":true,"marketCapRank":274,"supply":{"amount":"388188098484985","decimals":9,"uiAmount":388188.098484985,"uiAmountString":"388188.098484985"},"holder":102,"priceUst":1,"marketCapFD":388188.098484985,"volume":{"volumeUsd":5036406511,"volume":0},"coingeckoInfo":{"marketCapRank":5,"coingeckoRank":51,"marketData":{"currentPrice":1,"ath":1.17,"athChangePercentage":-14.4041,"athDate":"2019-05-08T00:40:28.300Z","atl":0.891848,"atlChangePercentage":12.55151,"atlDate":"2021-05-19T13:14:05.611Z","marketCap":49650695755,"marketCapRank":5,"fullyDilutedValuation":0,"totalVolume":5036406511,"priceHigh24h":1.01,"priceLow24h":0.967951,"priceChange24h":0.0031754,"priceChangePercentage24h":0.31788,"priceChangePercentage7d":0.19095,"priceChangePercentage14d":0.18943,"priceChangePercentage30d":0.21514,"priceChangePercentage60d":0.1622,"priceChangePercentage200d":0.09669,"priceChangePercentage1y":0.1565,"marketCapChange24h":484095080,"marketCapChangePercentage24h":0.9846,"totalSupply":49494259338.1893,"maxSupply":null,"circulatingSupply":49491821947.0598,"lastUpdated":"2022-01-28T13:14:59.226Z"}},"tag":["stablecoin"]}],"total":7267}'
+  recorded_at: Fri, 28 Jan 2022 14:41:28 GMT
+recorded_with: VCR 6.0.0

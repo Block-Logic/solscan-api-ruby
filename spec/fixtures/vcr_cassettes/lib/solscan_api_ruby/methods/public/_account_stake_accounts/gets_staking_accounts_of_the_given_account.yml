@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/account/stakeAccounts?account=BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Jan 2022 11:44:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"785-dMfGKGk2bSZ/r8nPtCGoIZQCfoM"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=47kzr54HpsdOS97IA0M5KanGC96m0fSfiUMyW8V4r1OP8y0l9UN4i3bX8jrivgY%2BmV74q1JGNyNuUczg6XEghUlxI6OzUsp%2FHgO8Hr9FjK2kdju7EUmwyozn1vDVyczmnp61Yt9H8w%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d49f82b796a9293-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"2yewFEMyQFKJwt2yt2iA442XugiYM83j81K3pFpWRPMm":{"voter":"H7fXvnLCKtZqJBTipxeseabGfAZUdHJ9XuP6hCKrbvUb","amount":"9053778650814","type":"delegated","stakeAccount":"2yewFEMyQFKJwt2yt2iA442XugiYM83j81K3pFpWRPMm","staker":"BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb","role":["staker","withdrawer"]},"H7EFReSU6izk4J5Vo7waLaThBctqrZZr5jaMEcsSg3Pw":{"voter":"DfpdmTsSCBPxCDwZwgBMfjjV8mF8xHkGRcXP8dJBVmrq","amount":"9064839924548","type":"delegated","stakeAccount":"H7EFReSU6izk4J5Vo7waLaThBctqrZZr5jaMEcsSg3Pw","staker":"BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb","role":["staker"]},"CxMrvTEYJh7MupGAUgT2HwiwgFiaBJCTKRgdUi4CbTkQ":{"voter":"H7fXvnLCKtZqJBTipxeseabGfAZUdHJ9XuP6hCKrbvUb","amount":"17000000000000","type":"delegated","stakeAccount":"CxMrvTEYJh7MupGAUgT2HwiwgFiaBJCTKRgdUi4CbTkQ","staker":"BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb","role":["staker"]},"6u91aqjwAqSzuwBYqXEFBfW9yxSDcmHQh57JvEpvLVA":{"voter":"4qvFxnUXYjBdcviCwVV7gKcGJMCENEBfS82hSLJUhyvu","amount":"9051682224767","type":"delegated","stakeAccount":"6u91aqjwAqSzuwBYqXEFBfW9yxSDcmHQh57JvEpvLVA","staker":"BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb","role":["staker"]},"6qjrYVa5bmXEygg3Ao2cYn7ZA6F2XLHGVFdtwhmoXZQU":{"voter":"DfpdmTsSCBPxCDwZwgBMfjjV8mF8xHkGRcXP8dJBVmrq","amount":"17000000000000","type":"delegated","stakeAccount":"6qjrYVa5bmXEygg3Ao2cYn7ZA6F2XLHGVFdtwhmoXZQU","staker":"BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb","role":["staker"]},"D9v6nTJiXBqERkMbe7c6eKXr7gSZToPgukAq2UxN2P96":{"type":"initialized","stakeAccount":"D9v6nTJiXBqERkMbe7c6eKXr7gSZToPgukAq2UxN2P96","staker":"BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb","role":["staker"]},"7hTEVqbQmt3UPQQKcavaxzzakt1FWbwVXyE8MZGadhW6":{"voter":"4qvFxnUXYjBdcviCwVV7gKcGJMCENEBfS82hSLJUhyvu","amount":"17000000000000","type":"delegated","stakeAccount":"7hTEVqbQmt3UPQQKcavaxzzakt1FWbwVXyE8MZGadhW6","staker":"BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb","role":["staker"]}}'
+  recorded_at: Fri, 28 Jan 2022 12:44:33 GMT
+recorded_with: VCR 6.0.0

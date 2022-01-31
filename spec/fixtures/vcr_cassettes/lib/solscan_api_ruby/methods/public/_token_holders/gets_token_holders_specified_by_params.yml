@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.solscan.io/token/holders?limit=3&offset=1&tokenAddress=DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Jan 2022 14:36:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"201-CU3Oou+8qGPO8pAunl6ZUfEUyus"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nCAcUhJ4I6qH7S772vXT7%2BkcViMlF00g5qu72i075CLZMs6Duy3IPOEyHYoKvOsY6t73ilchgbtcPSeL22oSuOtq2mM8a%2FQltQQWQF20UCs67%2BS6UyMqVCtwPyUjUwfC9jqnSiiCrQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6d4af3e048fc9078-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"address":"5AKcga2wVjxcVRVex3Ai2zLLHcLeTY74pVBHBvJGkQWD","amount":100000000000001820,"decimals":9,"owner":"BrzXn1ryJhGjdTD9Mc7X9rtWeJgLQEBRNivqBNmQ1t8R","rank":2},{"address":"8V4UCtjRmsF2SjzpKykYYBx3qe4GmmLthcLkxGiKdJGX","amount":35874437572699732,"decimals":9,"owner":"9PTS8eMzQyMH1rogp9KFuNhqtbDghTppELNaza8v2gmL","rank":3},{"address":"G7TrrrncoXBNi9bKgZWnk5zPBTFMgvRk3VbghG2d2DNE","amount":12191953942811668,"decimals":9,"owner":"u6PJ8DtQuPFnfmwHbGFULQ4u4EgjDiyYKjVEsynXq2w","rank":4}],"total":13845}'
+  recorded_at: Fri, 28 Jan 2022 15:36:23 GMT
+recorded_with: VCR 6.0.0
