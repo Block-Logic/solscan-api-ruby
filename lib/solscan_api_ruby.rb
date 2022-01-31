@@ -11,11 +11,7 @@ require_relative "solscan_api_ruby/methods/base"
 require_relative "solscan_api_ruby/methods/public"
 
 module SolscanApiRuby
-  class << self
-    # Api url.
-    # @return [String] api url.
-    def api_url
-      "https://public-api.solscan.io"
-    end
-  end
+  # Api url.
+  # @return [String] api url.
+  API_URL = "https://public-api.solscan.io"
 end

@@ -3,7 +3,7 @@ module SolscanApiRuby
     class Base
       attr_accessor :api_url
 
-      def initialize(api_url: SolscanApiRuby.api_url)
+      def initialize(api_url: SolscanApiRuby::API_URL)
         @api_url = api_url
       end
 
