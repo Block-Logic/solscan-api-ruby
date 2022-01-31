@@ -24,7 +24,7 @@ Then run `bundle install`
 
 ### Usage examples
 
-#### JSON RPC API
+#### Solscan API
 ```ruby
 # If you set default cluster you don't need to pass it every time.
 method_wrapper = SolscanApiRuby::Methods.new
@@ -32,3 +32,6 @@ method_wrapper = SolscanApiRuby::Methods.new
 response = method_wrapper.block_last
 puts response
 ```
+
+### Tip
+There is a limit of 50 records mentioned in Solscan docs for some endpoints, but you can try get a bit more than this.
