@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    solscan_api_ruby (1.0.0.pre)
+    solscan_api_ruby (1.0.0)
       faraday (~> 2.1)
       oj (~> 3.13)
 
