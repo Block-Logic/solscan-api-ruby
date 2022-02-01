@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   ]
   spec.extra_rdoc_files = ['README.md']
   spec.metadata= {
-    'documentation_uri' => 'https://www.rubydoc.info/github/Block-Logic/solscan-api-ruby',
+    'documentation_uri' => 'https://www.rubydoc.info/gems/solscan_api_ruby',
     'source_code_uri' => 'https://github.com/Block-Logic/solscan-api-ruby'
   }
 
