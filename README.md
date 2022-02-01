@@ -27,10 +27,14 @@ Then run `bundle install`
 #### Solscan API
 ```ruby
 # If you set default cluster you don't need to pass it every time.
-method_wrapper = SolscanApiRuby::Methods.new
+method_wrapper = SolscanApiRuby::Methods::Public.new
 
 response = method_wrapper.block_last
-puts response
+
+response.successfull?
+response.status
+response.headers
+response.body
 ```
 
 ### Tip
