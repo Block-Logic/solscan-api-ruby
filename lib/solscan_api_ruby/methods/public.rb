@@ -104,7 +104,7 @@ module SolscanApiRuby
         params = {}
 
         params[:account] = account
-        params[:before_hash] = before_hash if before_hash
+        params[:beforeHash] = before_hash if before_hash
         params[:limit] = limit if limit
 
         send_request(__method__, params: params)
